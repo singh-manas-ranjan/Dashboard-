@@ -1,0 +1,1 @@
+export default [{name:"Dashboard",icon:"/dashboardIcon.svg"},{name:"Leaderboard",icon:"/leaderboardIcon.svg"},{name:"Track Progress",icon:"/trackProgress.svg"},{name:"Exercise Progression",icon:"/exerciseProgressIcon.svg"},{name:"Activity Log",icon:"/activityLogIcon.svg"}];

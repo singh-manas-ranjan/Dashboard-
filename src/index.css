@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+  --sidebar-text-color: #737B7B;
+  --active-bg-color: #5D5FEF;
+}
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.semiBold{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+body{
+  /* background: #dde6ed; */
+  background: #ffff;
+  padding: 20px;
+}
+
+
+/* ============= Sidebar ============ */
+.menu{
+  display: grid;
+  height: 50vh;
+  position: relative;
+  top: 80px;
+}
+.menuItems{
+  all: unset;
+  width: 170px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  padding-inline: 30px;
+  color: var(--sidebar-text-color);
+  transition: all .2s ease-in-out;
+}
+.menuItems>p{
+  width: 120px;
+}
+
+.menuItems.active{
+  color: #ffff;
+  background-color: var(--active-bg-color);
+  pointer-events: none;
+}
+.menuItems.active{
+  color: #ffff;
+  background-color: var(--active-bg-color);
+}
+.menuItems:hover{
+  background-color: #b4b7b96c;
+}
+
+.imgContainer{
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* ============= Sidebar End ============ */
+
+.dashboard{
+  display: flex;
+  gap: 30px;
+  height: 95vh;
+  position: relative;
+}
+/* ============= Navbar Start ============ */
+.navbar{
+  position: absolute;
+  width: 85%;
+  height: 80px;
+  right: 0;
+  top: -10px;
+  display: flex;
+  align-items: center;
+  padding-inline: 50px;
+  justify-content: space-evenly;
+}
+
+.searchBox{
+  all: unset;
+  width: 513px;
+  height: 40px;
+  background-color: #dadfe490;
+  padding-left: 50px;
+  border-radius: 16px;
+}
+
+.searchIcon{
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  
+}
+
+/* ============= Navbar End ============ */
+
+/* =========== Dashboard Content Start =========== */
+.dashboardContent{
+  background-color: #dde6ed;
+  display: grid;
+  width: 100%;
+  margin: 80px 20px 0px 0px;
+  border-radius: 16px;
+}
+/* =========== Dashboard Content End=========== */
+
+.gridItems{
+  border-radius: 16px;
+  background-color: #ffff;
+  display: grid;
+  place-items: center;
+}
+
+.menuBtn{
+  all: unset;
+
+}
+.dropItems{
+  all: unset;
+}
